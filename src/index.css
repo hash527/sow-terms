@@ -1,0 +1,42 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+}
+
+.wrapper {
+  height: 100%;
+  line-height: 1.5;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+.fixed-bg {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  color: white;
+  text-align: center;
+  display: table;
+  background-image: url('https://storage.123fakturere.no/public/wallpapers/geiranger.jpg');
+}
