@@ -3,9 +3,11 @@ import { useState, useEffect } from 'react';
 import './index.css'
 function LandingPage() {
     const [data, setData] = useState({})
-    const [loading,isLoading] = useState(true)
+    const [loading, isLoading] = useState(true)
+    const url = import.meta.env.VITE_SERVER
+    console.log(url,"url")
     const fetchData = async () => {
-        const res = await fetch('http://localhost:3000/terms')
+        const res = await fetch(url)
         const data = await res.json()
         setData(data[0])
         isLoading(false)
@@ -17,7 +19,7 @@ function LandingPage() {
         <h1>Terms</h1>
         <BackButton />
         <div className='card'>
-            {isLoading && 'loading terms ...' }
+            {isLoading && 'loading terms ...'}
             {data && data?.terms}
         </div>
         <div className='footer'>
